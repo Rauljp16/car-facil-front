@@ -11,7 +11,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        textColor: "#7d7d7d",
+        contrast: "#d0d0d0",
       },
+      fontFamily: {
+        grechen: ["var(--font-grechen-fuemen)", "sans-serif"],
+        geistSans: ["var(--font-rubik)", "sans-serif"],
+        rubik: ["var(--font-geist-sans)", "sans-serif"],
+      },
+
     },
   },
   plugins: [],
