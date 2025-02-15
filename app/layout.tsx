@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Grechen_Fuemen, Rubik } from "next/font/google";
+import { Grechen_Fuemen, Lato } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 const grechen = Grechen_Fuemen({
   variable: "--font-grechen-fuemen",
   weight: "400",
 });
-const rubik = Rubik({
-  variable: "--font-rubik",
+const lato = Lato({
+  variable: "--font-lato",
   weight: "400",
 });
 
@@ -29,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${grechen.variable} ${geistSans.variable} ${rubik.variable} antialiased p-2`}
+        className={`${grechen.variable} ${lato.variable} antialiased font-lato`}
       >
         {children}
       </body>

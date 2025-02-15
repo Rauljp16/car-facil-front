@@ -21,7 +21,7 @@ export default async function Home() {
       <Header />
       <Initial_Info />
       <News />
-      {/* <CarsList cars={cars} /> */}
+      <CarsList cars={cars} />
       <Footer />
     </>
   );

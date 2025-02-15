@@ -3,7 +3,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="flex justify-between items-center">
+    <div className="absolute top-0 left-0 w-full flex justify-between items-center p-4">
       <Image
         src="/images/logo.png"
         alt="Logo Car Facil"
@@ -11,7 +11,7 @@ function Header() {
         height={100}
         className="w-14"
       />
-      <button className=" text-textColor font-rubik text-sm">Contacto</button>
+      <button className=" text-textColor text-sm">Contacto</button>
     </div>
   );
 }

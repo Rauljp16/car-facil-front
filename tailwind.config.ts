@@ -16,8 +16,7 @@ export default {
       },
       fontFamily: {
         grechen: ["var(--font-grechen-fuemen)", "sans-serif"],
-        geistSans: ["var(--font-rubik)", "sans-serif"],
-        rubik: ["var(--font-geist-sans)", "sans-serif"],
+        lato: ["var(--font-lato)", "sans-serif"],
       },
 
     },
