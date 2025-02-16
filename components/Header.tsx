@@ -11,7 +11,13 @@ function Header() {
         height={100}
         className="w-14"
       />
-      <button className=" text-textColor text-sm">Contacto</button>
+      <Image
+        src="/svg/menu_burguer.svg"
+        alt="Menu burguer"
+        width={20}
+        height={20}
+        className="w-8 h-8 cursor-pointer z-10"
+      />
     </div>
   );
 }
