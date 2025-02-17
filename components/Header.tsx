@@ -5,11 +5,11 @@ function Header() {
   return (
     <div className="absolute top-0 left-0 w-full flex justify-between items-center p-4">
       <Image
-        src="/images/logo.png"
+        src="/images/logo3.png"
         alt="Logo Car Facil"
         width={100}
         height={100}
-        className="w-14"
+        className="w-20"
       />
       <Image
         src="/svg/menu_burguer.svg"

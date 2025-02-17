@@ -20,7 +20,7 @@ export default async function Home() {
     <>
       <Header />
       <Initial_Info />
-      <News />
+      <News cars={cars} />
       <CarsList cars={cars} />
       <Footer />
     </>
