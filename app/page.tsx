@@ -5,6 +5,7 @@ import Initial_Info from "@/components/Initial_Info";
 import News from "@/components/News";
 
 export interface Car {
+  createdAt: string | number | Date;
   id: number;
   marca: string;
   modelo: string;

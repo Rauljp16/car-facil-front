@@ -20,3 +20,19 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* Estilos para el slide activo (centro) */
+.swiper-slide-active img {
+  width: 600px; /* Ancho de la imagen central */
+  transform: scale(1.8); /* Escala la imagen central */
+  z-index: 10; /* Asegura que la imagen central esté por encima de las laterales */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para los slides no activos (laterales) */
+.swiper-slide:not(.swiper-slide-active) img {
+  width: 200px; /* Ancho de las imágenes laterales */
+  transform: scale(0.6); /* Reduce el tamaño de las imágenes laterales */
+  opacity: 0.8; /* Reduce la opacidad de las imágenes laterales */
+  transition: all 0.3s ease; /* Transición suave */
+}
