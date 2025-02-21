@@ -3,7 +3,7 @@ import React from "react";
 
 function Initial_Info() {
   return (
-    <section className="relative flex flex-col w-full h-[calc(100vh-16vh)]">
+    <section className="relative flex flex-col w-full h-[calc(100vh-20vh)]">
       <div className="absolute -z-10 -top-32 right-0 w-1/4 h-2/4 bg-contrast blur-[1px] border "></div>
       <div className="flex justify-center w-full h-[65%]">
         <article className="relative top-16 flex flex-col w-[13%] max-w-12 h-1/2 gap-2">
@@ -41,7 +41,7 @@ function Initial_Info() {
       </div>
       <div className="flex flex-col justify-between w-full h-[35%]  px-4 py-4 ">
         <h1 className="text-4xl font-thin">Un coche para tí</h1>
-        <p className="text-xs w-3/4">
+        <p className="text-xs w-full max-w-80">
           Encuentra el coche perfecto para ti, con opciones que se adaptan a tu
           estilo y presupuesto.
         </p>
