@@ -1,7 +1,12 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Autoplay,
+  EffectCoverflow,
+} from "swiper/modules";
 import Image from "next/image";
 import { Car } from "@/app/page";
 
@@ -27,20 +32,28 @@ function Slider({ cars }: { cars: Car[] }) {
   const latestCars = sortedCars.slice(0, 5);
 
   const swiperParams = {
-    modules: [Navigation, Pagination, Autoplay],
-    slidesPerView: 1.2,
-    spaceBetween: 20,
+    modules: [EffectCoverflow, Navigation, Pagination, Autoplay],
+    slidesPerView: "auto" as const,
     centeredSlides: true,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
+    effect: "coverflow",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+      speed: 1000,
     },
+    autoplay: {
+      delay: 3000,
+      disablesOnInteraction: false,
+    },
+    loop: true,
   };
 
   return (
-    <div className="relative w-full h-[300px] py-4 mb-20">
-      <h1 className="text-2xl p-2 pt-0">¡Novedades!</h1>
+    <div className="relative w-full h-[220px] py-4 mb-20">
+      <h1 className="text-2xl px-2 pb-4 pt-0">¡Novedades!</h1>
       <style>{customStyles}</style>
       <Swiper {...swiperParams} className="w-full h-full">
         {latestCars.map((car, index) => (
