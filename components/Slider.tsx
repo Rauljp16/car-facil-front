@@ -48,6 +48,9 @@ function Slider({ cars }: { cars: Car[] }) {
       delay: 3000,
       disablesOnInteraction: false,
     },
+    pagination: {
+      clickable: true,
+    },
     loop: true,
   };
 

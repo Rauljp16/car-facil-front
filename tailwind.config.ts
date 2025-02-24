@@ -13,6 +13,7 @@ export default {
         foreground: "var(--foreground)",
         textColor: "#7d7d7d",
         contrast: "#d0d0d0",
+        greenCarFacil: "#25d972",
       },
       fontFamily: {
         grechen: ["var(--font-grechen-fuemen)", "sans-serif"],

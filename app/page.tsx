@@ -28,7 +28,7 @@ export default async function Home() {
   );
 }
 
-async function getCars(): Promise<Car[]> {
+export async function getCars(): Promise<Car[]> {
   const apiUrl = process.env.CAR_FACIL_API;
   const res = await fetch(`${apiUrl}/coches`);
   if (!apiUrl) {
