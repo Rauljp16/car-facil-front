@@ -1,6 +1,6 @@
-import { Car } from "@/app/page";
 import React from "react";
 import Slider from "./Slider";
+import { Car } from "@/app/types/global";
 
 function News({ cars }: { cars: Car[] }) {
   return (
