@@ -8,4 +8,10 @@ export interface Car {
     precio: string;
     images: string[];
     image_path: string;
+    cambio: string;
+    combustible: string;
+    cv: number;
+    motor: string;
+    plazas: number;
+    puertas: number;
 }
