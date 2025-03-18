@@ -75,15 +75,14 @@ function Slider({ cars }: { cars: Car[] }) {
               <div className="relative h-full w-[280px]">
                 <Image
                   src={car.images[0]}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
                   alt={`${car.marca} ${car.modelo}`}
+                  className="object-cover"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-1 ">
                   <h3 className="text-sm font-bold">{car.marca}</h3>
                   <p className="text-xs">{car.modelo}</p>
                 </div>
-                {/* Solo muestra la fracción en el slide activo */}
                 {activeIndex === index && (
                   <div className="fraction-container">
                     {activeIndex + 1} / {latestCars.length}

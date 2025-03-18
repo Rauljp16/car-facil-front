@@ -20,7 +20,7 @@ function Cars_List({ cars }: { cars: Car[] }) {
                     className="w-full h-full object-cover center rounded-t-md"
                   />
                 </div>
-                <div className="flex flex-col h-1/2 justify-between bg-neutral-900 text-neutral-50 rounded-b-md p-4 pt-3">
+                <div className="flex flex-col h-1/2 justify-between bg-neutral-800 text-neutral-50 rounded-b-md p-4 pt-3">
                   <div className="flex items-end gap-1">
                     <h3 className="text-base tracking-wide font-bold -mb-2">
                       {car.marca} {car.modelo}
@@ -30,14 +30,37 @@ function Cars_List({ cars }: { cars: Car[] }) {
                     {car.precio} €
                   </p>
                   <div className="flex justify-between gap-2">
-                    <article className="bg-neutral-600 text-xs py-1 px-2 w-full rounded-sm">
-                      <p>{car.anio}</p>
+                    <article className="flex bg-neutral-600 text-xs items-center px-2 py-1 w-full rounded-sm gap-1">
+                      <Image
+                        src="/svg/calendar.svg"
+                        alt="svg calendar"
+                        width={16}
+                        height={16}
+                        className=" h-full"
+                      />
+                      <p className="text-xs pt-[2px] mx-auto">{car.anio}</p>
                     </article>
-                    <article className="bg-neutral-600 text-xs py-1 px-2 w-full rounded-sm">
-                      <p>160.000 km</p>
+                    <article className="flex bg-neutral-600 text-xs items-center px-2 py-1 w-full rounded-sm gap-1">
+                      <Image
+                        src="/svg/km.svg"
+                        alt="svg kilometers"
+                        width={14}
+                        height={14}
+                        className=" h-full"
+                      />
+                      <p className="text-xs pt-[2px] mx-auto">160.000 km</p>
                     </article>
-                    <article className="bg-neutral-600 text-xs py-1 px-2 w-full rounded-sm">
-                      <p>{car.combustible}</p>
+                    <article className="flex bg-neutral-600 text-xs items-center px-2 py-1 w-full rounded-sm gap-1">
+                      <Image
+                        src="/svg/fuel.svg"
+                        alt="svg fuel"
+                        width={16}
+                        height={16}
+                        className=" h-full"
+                      />
+                      <p className="text-xs pt-[2px] mx-auto">
+                        {car.combustible}
+                      </p>
                     </article>
                   </div>
                   <button className=" bg-greenCarFacil p-1 rounded-md">
