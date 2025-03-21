@@ -17,6 +17,7 @@ export default function CarPage() {
   const [car, setCar] = useState<Car | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     async function fetchCar() {
@@ -28,9 +29,13 @@ export default function CarPage() {
         if (!res.ok) throw new Error("Error al obtener los datos del coche");
 
         const data: Car = await res.json();
-        setCar(data);
+        setTimeout(() => {
+          setCar(data);
+          setIsLoading(false);
+        }, 2000);
       } catch (err) {
         setError(err instanceof Error ? err.message : "Error desconocido");
+        setIsLoading(false);
       }
     }
 
@@ -39,6 +44,7 @@ export default function CarPage() {
     }
   }, [id]);
 
+  if (isLoading) return <div className="text-gray-500">Cargando...nuevo</div>;
   if (error) return <div className="text-red-500">Error: {error}</div>;
   if (!car) return <div className="text-gray-500">Cargando...</div>;
 

@@ -71,7 +71,7 @@ function Slider({ cars }: { cars: Car[] }) {
       >
         {latestCars.map((car, index) => (
           <SwiperSlide key={car.id} style={{ width: "auto" }}>
-            <Link href={`/coches/${car.id}`}>
+            <Link href={`coches/${car.id}`}>
               <div className="relative h-full w-[280px]">
                 <Image
                   src={car.images[0]}
