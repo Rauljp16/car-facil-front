@@ -11,5 +11,6 @@ function Page() {
     </div>
   );
 }
+//mirar por que no funciona el fetch de la api de coches.
 
 export default Page;
