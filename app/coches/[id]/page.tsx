@@ -51,24 +51,26 @@ export default function CarPage() {
   return (
     <div className="w-full mx-auto py-16">
       {/* Image Gallery */}
-      <div className="mb-6">
-        <div className="w-full h-64">
+      <div className="mb-6 bg-blue-400">
+        <div className="w-full h-80">
           <Swiper
             loop={true}
             spaceBetween={0}
             thumbs={{ swiper: thumbsSwiper }}
             modules={[FreeMode, Navigation, Thumbs]}
-            className="w-full h-full"
+            className="relative w-full h-full object-cover"
           >
             {car.images.map((image, index) => (
               <SwiperSlide key={index}>
-                <Image
-                  src={image}
-                  width={1350}
-                  height={750}
-                  alt={`${car.marca} ${car.modelo}`}
-                  className="w-full h-full object-cover"
-                />
+                <div className="relative p-16">
+                  <Image
+                    src={image}
+                    width={1350}
+                    height={750}
+                    alt={`${car.marca} ${car.modelo}`}
+                    className="w-full h-full object-cover "
+                  />
+                </div>
                 <div className="absolute bottom-2 right-2 text-xs bg-black bg-opacity-60 py-1 px-2 rounded-xl text-white">
                   {index + 1} / {car.images.length}
                 </div>

@@ -62,7 +62,7 @@ function Cars_List({ cars }: { cars: Car[] }) {
                     </p>
                   </article>
                 </div>
-                <Link href={`prueba/${car.id}`}>
+                <Link href={`coches/${car.id}`}>
                   <button className=" bg-greenCarFacil w-full p-1 rounded-md">
                     Ver Detalles
                   </button>
