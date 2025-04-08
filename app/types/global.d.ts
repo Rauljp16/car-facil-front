@@ -5,6 +5,7 @@ export interface Car {
     marca: string;
     modelo: string;
     anio: number;
+    km: number;
     precio: string;
     images: string[];
     image_path: string;

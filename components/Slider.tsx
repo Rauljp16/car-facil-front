@@ -67,7 +67,7 @@ function Slider({ cars }: { cars: Car[] }) {
         }}
         loop
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        className="w-full h-full"
+        className="w-full md:w-[70%] h-full"
       >
         {latestCars.map((car, index) => (
           <SwiperSlide key={car.id} style={{ width: "auto" }}>
@@ -77,9 +77,9 @@ function Slider({ cars }: { cars: Car[] }) {
                   src={car.images[0]}
                   fill
                   alt={`${car.marca} ${car.modelo}`}
-                  className="object-cover"
+                  className="object-cover rounded-sm"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-1 ">
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-1 rounded-b-sm ">
                   <h3 className="text-sm font-bold">{car.marca}</h3>
                   <p className="text-xs">{car.modelo}</p>
                 </div>

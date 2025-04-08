@@ -1,7 +1,7 @@
-import CarsList from "@/components/Cars_List";
 import Initial_Info from "@/components/Initial_Info";
 import News from "@/components/News";
 import { getCars } from "./lib/Service";
+import Cars_list_preview from "@/components/Cars_list_preview";
 
 export default async function Home() {
   const cars = await getCars();
@@ -9,7 +9,7 @@ export default async function Home() {
     <>
       <Initial_Info />
       <News cars={cars} />
-      <CarsList cars={cars} />
+      <Cars_list_preview cars={cars} />
     </>
   );
 }
