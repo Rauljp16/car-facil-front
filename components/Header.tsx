@@ -23,7 +23,7 @@ function Header() {
           className="w-8 h-8 cursor-pointer z-10"
         />
       </div>
-      <div className="absolute -z-10 top-0 right-0 w-1/4 h-56 bg-contrast blur-[1px]"></div>
+      <div className="absolute -z-10 top-0 right-0 w-1/4 h-60 bg-contrast"></div>
     </>
   );
 }

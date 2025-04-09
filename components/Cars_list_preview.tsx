@@ -7,7 +7,7 @@ function Cars_List({ cars }: { cars: Car[] }) {
 
   return (
     <div>
-      <ul className="flex flex-col p-6 gap-6 bg-neutral-300">
+      <ul className="flex flex-col p-4 gap-4 bg-contrast">
         {carsPreview.map((car) => (
           <li key={car.id} className="">
             <div className="flex flex-col w-full h-80 rounded-xl">
@@ -30,7 +30,7 @@ function Cars_List({ cars }: { cars: Car[] }) {
                   </p>
                 </div>
                 <div className="flex justify-between gap-2">
-                  <article className="flex bg-neutral-600 text-xs items-center p-1 w-full rounded gap-1">
+                  <article className="flex bg-neutral-600 text-sm items-center p-1 w-full rounded gap-1">
                     <Image
                       src="/svg/calendar.svg"
                       alt="svg calendar"
@@ -38,9 +38,9 @@ function Cars_List({ cars }: { cars: Car[] }) {
                       height={16}
                       className="w-4"
                     />
-                    <p className="text-xs pt-[2px] mx-auto">{car.anio}</p>
+                    <p className="pt-[2px] mx-auto">{car.anio}</p>
                   </article>
-                  <article className="flex bg-neutral-600 text-xs items-center p-1 w-full rounded gap-1">
+                  <article className="flex bg-neutral-600 text-sm items-center p-1 w-full rounded gap-1">
                     <Image
                       src="/svg/km.svg"
                       alt="svg kilometers"
@@ -48,23 +48,21 @@ function Cars_List({ cars }: { cars: Car[] }) {
                       height={14}
                       className="w-4"
                     />
-                    <p className="text-xs pt-[2px] mx-auto">{car.km}</p>
+                    <p className="text-sm pt-[2px] mx-auto">{car.km}</p>
                   </article>
-                  <article className="flex bg-neutral-600 text-xs items-center p-1 w-full rounded gap-1">
+                  <article className="flex bg-neutral-600 text-sm items-center p-1 w-full rounded gap-1">
                     <Image
                       src="/svg/fuel.svg"
                       alt="svg fuel"
                       width={16}
                       height={16}
-                      className=" w-4"
+                      className="w-4"
                     />
-                    <p className="text-xs pt-[2px] mx-auto">
-                      {car.combustible}
-                    </p>
+                    <p className="pt-[2px] mx-auto">{car.combustible}</p>
                   </article>
                 </div>
                 <Link href={`coches/${car.id}`}>
-                  <button className=" bg-greenCarFacil w-full p-1 rounded-2xl">
+                  <button className="bg-greenCarFacil w-full p-1 rounded-2xl">
                     Ver Detalles
                   </button>
                 </Link>
@@ -74,12 +72,12 @@ function Cars_List({ cars }: { cars: Car[] }) {
         ))}
       </ul>
 
-      <div className="flex w-full justify-end pr-6 pb-4 -mt-4 bg-neutral-300">
+      <div className="flex w-full justify-end p-4 pt-0 bg-neutral-300">
         <Link
           href={"coches/todos"}
-          className="bg-red-500 text-white text-sm px-2 py-1 rounded-2xl cursor-pointer"
+          className="text-red-500 border border-red-500 p-1 rounded-3xl font-thin px-3 cursor-pointer"
         >
-          Ver todos
+          Mostrar todos
         </Link>
       </div>
     </div>

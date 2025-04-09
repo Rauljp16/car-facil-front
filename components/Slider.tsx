@@ -81,7 +81,7 @@ function Slider({ cars }: { cars: Car[] }) {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-1 rounded-b-sm ">
                   <h3 className="text-sm font-bold">{car.marca}</h3>
-                  <p className="text-xs">{car.modelo}</p>
+                  <p className="text-sm">{car.modelo}</p>
                 </div>
                 {activeIndex === index && (
                   <div className="fraction-container">

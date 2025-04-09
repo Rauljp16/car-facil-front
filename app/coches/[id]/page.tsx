@@ -9,7 +9,7 @@ type Props = {
 };
 
 export default async function Page({ params }: Props) {
-  const { id } = params;
+  const { id } = await params;
   const car = await getCarById(id);
 
   if (!car) return notFound();

@@ -41,7 +41,7 @@ export default function Car_Details({ car }: Props) {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute bottom-2 right-2 text-xs bg-black bg-opacity-60 py-1 px-2 rounded-xl text-white">
+                <div className="absolute bottom-2 right-2 text-sm bg-black bg-opacity-60 py-1 px-2 rounded-xl text-white">
                   {index + 1} / {car.images.length}
                 </div>
               </SwiperSlide>

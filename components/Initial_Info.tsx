@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Initial_Info() {
@@ -38,14 +39,17 @@ function Initial_Info() {
           />
         </article>
       </div>
-      <div className="flex flex-col justify-between w-full h-[35%]  px-4 py-4 ">
+      <div className="flex flex-col justify-between w-full h-[35%] p-4">
         <h1 className="text-4xl font-thin">Un coche para tí</h1>
-        <p className="text-xs w-full max-w-80">
+        <p className="text-sm w-full max-w-80">
           Encuentra el coche perfecto para ti, con opciones que se adaptan a tu
           estilo y presupuesto.
         </p>
         <div className="flex gap-4 w-full max-w-80">
-          <button className="flex w-full items-center justify-evenly bg-black rounded-2xl text-xs text-white py-2">
+          <Link
+            href={"coches/todos"}
+            className="flex w-full items-center justify-evenly bg-black rounded-2xl text-sm text-white py-2"
+          >
             Ver Coches
             <Image
               src="/svg/arrow_green.svg"
@@ -53,11 +57,14 @@ function Initial_Info() {
               width={16}
               height={16}
             />
-          </button>
-          <button className="flex w-full items-center justify-evenly border-[1px] border-black rounded-2xl text-xs text-black py-2">
-            Ubicación
+          </Link>
+          <Link
+            href="#contact"
+            className="flex w-full items-center justify-evenly border-[1px] border-black rounded-2xl text-sm text-black py-2"
+          >
+            Contacto
             <Image src="/svg/arrow.svg" alt="arrow" width={16} height={16} />
-          </button>
+          </Link>
         </div>
       </div>
     </section>
