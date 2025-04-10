@@ -60,7 +60,7 @@ function Cars_List({ cars }: { cars: Car[] }) {
                     <p className="pt-[2px] mx-auto">{car.combustible}</p>
                   </article>
                 </div>
-                <Link href={`coches/${car.id}`}>
+                <Link href={`${car.id}`}>
                   <button className="bg-greenCarFacil w-full p-1 rounded-2xl">
                     Ver Detalles
                   </button>

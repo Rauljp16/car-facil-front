@@ -1,6 +1,8 @@
 import Car_Details from "@/components/Car_Details";
 import { getCarById } from "@/app/lib/Service";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
+import Skeleton from "@/components/Skeleton";
 
 type Props = {
   params: {
@@ -14,5 +16,11 @@ export default async function Page({ params }: Props) {
 
   if (!car) return notFound();
 
-  return <Car_Details car={car} />;
+  return (
+    <>
+      <Suspense fallback={<Skeleton />}>
+        <Car_Details car={car} />;
+      </Suspense>
+    </>
+  );
 }
