@@ -93,48 +93,6 @@ export default function Car_Details({ car }: Props) {
 
           <h2 className="text-xl font-semibold mb-4">Descripción</h2>
           <p className="text-gray-600 mb-8">descripcion</p>
-
-          {/* Formulario de contacto */}
-          <div className="bg-white p-6 rounded-sm shadow-md h-fit">
-            <h2 className="text-xl font-semibold mb-4">
-              Contactar al vendedor
-            </h2>
-            <form className="space-y-4">
-              <input
-                type="text"
-                id="name"
-                placeholder="Nombre"
-                className="w-full px-3 py-2 border border-gray-300 rounded-sm"
-              />
-              <input
-                type="email"
-                id="email"
-                placeholder="Email"
-                className="w-full px-3 py-2 border border-gray-300 rounded-sm"
-              />
-              <input
-                type="tel"
-                id="phone"
-                placeholder="Teléfono"
-                className="w-full px-3 py-2 border border-gray-300 rounded-sm"
-              />
-              <textarea
-                id="message"
-                rows={4}
-                defaultValue="Me interesa este coche. ¿Podría proporcionarme más información?"
-                className="w-full px-3 py-2 border border-gray-300 rounded-sm"
-              />
-              <button
-                type="submit"
-                className="w-full bg-red-500 text-white py-2 px-4 rounded-sm hover:bg-orange-600 transition-colors"
-              >
-                Enviar mensaje
-              </button>
-            </form>
-            <div className="mt-6 flex items-center justify-center space-x-2 text-gray-600">
-              <span>UBICACION por determinar</span>
-            </div>
-          </div>
         </div>
       </div>
     </div>

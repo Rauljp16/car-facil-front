@@ -5,8 +5,7 @@ import Link from "next/link";
 function Cars_List({ cars }: { cars: Car[] }) {
   return (
     <div>
-      <h1>Todos los coches</h1>
-      <ul className="flex flex-col p-4 gap-4 bg-contrast">
+      <ul className="flex flex-col p-4 gap-4 ">
         {cars.map((car) => (
           <li key={car.id} className="">
             <div className="flex flex-col w-full h-80 rounded-xl">

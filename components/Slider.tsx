@@ -43,7 +43,7 @@ function Slider({ cars }: { cars: Car[] }) {
 
   return (
     <div className="relative w-full h-[220px] py-4 mb-20">
-      <h1 className="text-2xl px-2 pb-4 pt-0">¡Novedades!</h1>
+      <h1 className="text-2xl px-4 pb-4 pt-0">¡Novedades!</h1>
       <style>{customStyles}</style>
       <Swiper
         modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}
