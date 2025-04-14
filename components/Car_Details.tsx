@@ -19,7 +19,7 @@ export default function Car_Details({ car }: Props) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
   return (
-    <div className="w-full mx-auto py-16">
+    <div className="w-full mx-auto pt-20 p-2">
       {/* Galería de imágenes */}
       <div className="mb-6">
         <div className="w-full h-80">
@@ -38,7 +38,7 @@ export default function Car_Details({ car }: Props) {
                     width={1350}
                     height={750}
                     alt={`${car.marca} ${car.modelo}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded"
                   />
                 </div>
                 <div className="absolute bottom-2 right-2 text-sm bg-black bg-opacity-60 py-1 px-2 rounded-xl text-white">
@@ -49,7 +49,7 @@ export default function Car_Details({ car }: Props) {
           </Swiper>
         </div>
 
-        <div className="w-full h-16 pt-2">
+        <div className="w-full h-16 pt-2 ">
           <Swiper
             onSwiper={setThumbsSwiper}
             loop
@@ -57,7 +57,7 @@ export default function Car_Details({ car }: Props) {
             slidesPerView={3}
             freeMode
             modules={[FreeMode, Navigation, Thumbs]}
-            className="w-full h-full"
+            className="w-full h-full "
           >
             {car.images.map((image, index) => (
               <SwiperSlide key={index}>
@@ -66,7 +66,7 @@ export default function Car_Details({ car }: Props) {
                   width={800}
                   height={450}
                   alt={`${car.marca} ${car.modelo}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded"
                 />
               </SwiperSlide>
             ))}
