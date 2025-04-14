@@ -57,13 +57,9 @@ function Slider({ cars }: { cars: Car[] }) {
           modifier: 1,
           slideShadows: true,
         }}
-        // autoplay={{
-        //   delay: 3000,
-        //   disableOnInteraction: false,
-        // }}
-        pagination={{
-          type: "fraction",
-          el: ".custom-fraction",
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
         }}
         loop
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
@@ -84,8 +80,10 @@ function Slider({ cars }: { cars: Car[] }) {
                   <p className="text-sm">{car.modelo}</p>
                 </div>
                 {activeIndex === index && (
-                  <div className="fraction-container">
-                    {activeIndex + 1} / {latestCars.length}
+                  <div className="fraction-container flex gap-1">
+                    <p className="text-red-500 font-bold">{activeIndex + 1}</p>
+                    <p>/</p>
+                    <p>{latestCars.length}</p>
                   </div>
                 )}
               </div>

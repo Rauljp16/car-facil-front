@@ -25,7 +25,7 @@ function Cars_List({ cars }: { cars: Car[] }) {
                   <h3 className="text-base tracking-wide font-bold">
                     {car.marca} {car.modelo}
                   </h3>
-                  <p className="text-sm text-red-500 tracking-wide ">
+                  <p className="text-sm text-white tracking-wide ">
                     {car.precio} €
                   </p>
                 </div>
