@@ -28,7 +28,7 @@ export default function Contact() {
                 className="w-6 h-6 "
               />
 
-              <p>+34 xxx xxx xxx</p>
+              <p>+34 666 666 666</p>
             </div>
             <div className="flex items-center gap-4">
               <Image
@@ -71,7 +71,15 @@ export default function Contact() {
           ></iframe>
         </div>
       </div>
-      <SendMessage />
+      <div className="flex flex-col gap-4 p-4">
+        <h2 className="text-xl font-bold">Contacta con nosotros</h2>
+        <p className="text-sm max-w-80">
+          Estamos disponibles para responder a todas tus preguntas sobre
+          nuestros vehículos. Haz clic en el botón para iniciar una conversación
+          con nosotros.
+        </p>
+        <SendMessage />
+      </div>
     </div>
   );
 }

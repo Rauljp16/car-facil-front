@@ -5,7 +5,7 @@ import React from "react";
 function Header() {
   return (
     <>
-      <div className="absolute top-0 left-0 w-full flex justify-between items-center p-4">
+      <div className="absolute top-0 left-0 w-full flex justify-between items-center p-4 ">
         <Link href={"/"} className="cursor-pointer z-30">
           <Image
             src="/images/logo3.png"

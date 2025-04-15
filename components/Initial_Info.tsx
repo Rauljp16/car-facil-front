@@ -4,7 +4,10 @@ import React from "react";
 
 function Initial_Info() {
   return (
-    <section className="relative flex flex-col w-full h-[calc(100vh-20vh)]">
+    <section
+      id="home"
+      className="relative flex flex-col w-full h-[calc(100vh-20vh)]"
+    >
       <div className="flex justify-center w-full h-[65%]">
         <article className="relative top-16 flex flex-col w-[13%] max-w-12 h-1/2 gap-2">
           <Image

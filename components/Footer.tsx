@@ -1,10 +1,200 @@
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   return (
-    <div className="relative bottom-0 left-0 w-full h-10 bg-black bg-opacity-30 p-2">
-      Footer
-    </div>
+    <footer className="w-full bg-neutral-800 py-6 pb-3">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Columna 1: Logo y descripción */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-4">
+              <Link href={"/"} className="cursor-pointer z-30">
+                <Image
+                  src="/images/logo3.png"
+                  alt="Logo Car Facil"
+                  width={100}
+                  height={100}
+                  className="w-20"
+                />
+              </Link>
+            </div>
+            <p className="text-white text-sm">
+              Tu concesionario de confianza para encontrar el coche perfecto.
+              Ofrecemos vehículos de segunda mano con garantía y al mejor
+              precio.
+            </p>
+            <div className="flex gap-4 pt-2">
+              <Link href="#">
+                <Image
+                  src="/svg/km.svg"
+                  alt="svg kilometers"
+                  width={14}
+                  height={14}
+                  className="w-4 h-4 hover:drop-shadow-xl transition-all duration-500"
+                />
+              </Link>
+              <Link
+                href="#"
+                className="text-white hover:text-green-500 transition-colors"
+              >
+                <Image
+                  src="/svg/km.svg"
+                  alt="svg kilometers"
+                  width={14}
+                  height={14}
+                  className="w-4"
+                />
+              </Link>
+              <Link
+                href="#"
+                className="text-white hover:text-green-500 transition-colors"
+              >
+                <Image
+                  src="/svg/km.svg"
+                  alt="svg kilometers"
+                  width={14}
+                  height={14}
+                  className="w-4"
+                />
+              </Link>
+              <Link
+                href="#"
+                className="text-white hover:text-green-500 transition-colors"
+              >
+                <Image
+                  src="/svg/km.svg"
+                  alt="svg kilometers"
+                  width={14}
+                  height={14}
+                  className="w-4"
+                />
+              </Link>
+            </div>
+          </div>
+
+          {/* Columna 2: Enlaces rápidos */}
+          <div className="space-y-4">
+            <h3 className="text-lg text-red-400 font-medium border-l-2 border-greenCarFacil pl-3">
+              Enlaces rápidos
+            </h3>
+            <ul className="space-y-2 text-white">
+              <li>
+                <Link
+                  href="#home"
+                  className="hover:text-green-500 transition-colors"
+                >
+                  Inicio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="hover:text-green-500 transition-colors"
+                >
+                  Catálogo de coches
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="hover:text-green-500 transition-colors"
+                >
+                  Novedades
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="hover:text-green-500 transition-colors"
+                >
+                  Sobre nosotros
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#contact"
+                  className="hover:text-green-500 transition-colors"
+                >
+                  Contacto
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Columna 3: Contacto */}
+          <div className="space-y-4">
+            <h3 className="text-lg text-red-400 font-medium border-l-2 border-greenCarFacil pl-3">
+              Contacto
+            </h3>
+            <ul className="space-y-3 text-white">
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/svg/km.svg"
+                  alt="svg kilometers"
+                  width={14}
+                  height={14}
+                  className="w-4"
+                />
+                <span>Camino de los soldados, San Ginés, Murcia</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/svg/km.svg"
+                  alt="svg kilometers"
+                  width={14}
+                  height={14}
+                  className="w-4"
+                />
+                <span>+34 666 666 666</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/svg/km.svg"
+                  alt="svg kilometers"
+                  width={14}
+                  height={14}
+                  className="w-4"
+                />
+                <span>carfacilmurcia@gmail.com</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Image
+                  src="/svg/km.svg"
+                  alt="svg kilometers"
+                  width={14}
+                  height={14}
+                  className="w-4"
+                />
+                <span>Lun - Vie: 9:00 - 14:00, 17:00 - 20:30</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Línea divisoria */}
+        <div className="border-t border-white mt-4 mb-3"></div>
+
+        {/* Copyright */}
+        <div className="flex flex-col w-full md:flex-row items-start justify-between text-sm gap-3 text-white">
+          <div className="flex w-fit gap-2 text-[10px]">
+            <Link href="#" className="hover:text-green-500 transition-colors">
+              Política de privacidad
+            </Link>
+            <Link href="#" className="hover:text-green-500 transition-colors">
+              Términos y condiciones
+            </Link>
+            <Link href="#" className="hover:text-green-500 transition-colors">
+              Cookies
+            </Link>
+          </div>
+          <p className="w-fit ">
+            © {new Date().getFullYear()} CarFácil. Todos los derechos
+            reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 }
 

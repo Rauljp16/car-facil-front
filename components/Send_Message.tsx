@@ -14,15 +14,9 @@ const SendMessage = () => {
   };
 
   return (
-    <div className="flex flex-col gap-4 w-full px-4 py-8">
-      <h2 className="text-xl font-bold">Contacta con nosotros</h2>
-      <p className="text-sm max-w-80">
-        Estamos disponibles para responder a todas tus preguntas sobre nuestros
-        vehículos. Haz clic en el botón para iniciar una conversación con
-        nosotros.
-      </p>
+    <div className="flex flex-col gap-4 w-full px-4">
       <div
-        className="w-fit px-4 py-1 mt-4 mx-auto bg-[#25D366] rounded-3xl flex items-center justify-center z-50"
+        className="w-fit px-4 py-1  mx-auto bg-[#25D366] rounded-3xl flex items-center justify-center z-50"
         onClick={handleClick}
       >
         <Image

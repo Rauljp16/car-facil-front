@@ -21,11 +21,14 @@ function Cars_List({ cars }: { cars: Car[] }) {
                 />
               </div>
               <div className="flex flex-col h-1/2 justify-between bg-neutral-800 text-neutral-50 rounded-b-md p-4 pt-3">
-                <div className="flex items-end gap-4">
+                <div className="flex items-end gap-2">
                   <h3 className="text-base tracking-wide font-bold">
-                    {car.marca} {car.modelo}
+                    {car.marca}
                   </h3>
                   <p className="text-sm text-white tracking-wide ">
+                    {car.modelo}
+                  </p>
+                  <p className="text-sm text-white tracking-wide ml-auto font-bold">
                     {car.precio} €
                   </p>
                 </div>
