@@ -7,10 +7,14 @@ import Footer from "@/components/Footer";
 const grechen = Grechen_Fuemen({
   variable: "--font-grechen-fuemen",
   weight: "400",
+  display: "swap",
+  subsets: ["latin"],
 });
 const lato = Lato({
   variable: "--font-lato",
   weight: "400",
+  display: "swap",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {

@@ -1,9 +1,10 @@
 import Image from "next/image";
 import SendMessage from "./Send_Message";
+import Call from "./Call";
 
 export default function Contact() {
   return (
-    <div id="contact" className="pt-8">
+    <div id="contact" className="pt-8 pb-2">
       <div className="flex flex-col gap-8 px-4">
         <div>
           <h2 className="text-3xl font-thin mb-6">Información de Contacto</h2>
@@ -17,7 +18,7 @@ export default function Contact() {
                 className="w-6 h-6 "
               />
 
-              <p>Camino de los soldados, San Gines, Murcia</p>
+              <p>Camino de los soldados, nº265 30169 San Gines, Murcia</p>
             </div>
             <div className="flex items-center gap-4">
               <Image
@@ -28,7 +29,7 @@ export default function Contact() {
                 className="w-6 h-6 "
               />
 
-              <p>+34 666 666 666</p>
+              <p>+34 722 783 162</p>
             </div>
             <div className="flex items-center gap-4">
               <Image
@@ -71,14 +72,17 @@ export default function Contact() {
           ></iframe>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-4">
-        <h2 className="text-xl font-bold">Contacta con nosotros</h2>
+      <div className="flex flex-col gap-4 py-6 px-4">
+        <h2 className="text-3xl font-thin">Contacta con nosotros</h2>
         <p className="text-sm max-w-80">
           Estamos disponibles para responder a todas tus preguntas sobre
           nuestros vehículos. Haz clic en el botón para iniciar una conversación
           con nosotros.
         </p>
-        <SendMessage />
+        <div className="flex gap-4 pt-4">
+          <Call />
+          <SendMessage />
+        </div>
       </div>
     </div>
   );

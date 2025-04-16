@@ -12,6 +12,7 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import SendMessage from "./Send_Message";
+import Call from "./Call";
 
 type Props = {
   car: Car;
@@ -128,7 +129,7 @@ export default function Car_Details({ car }: Props) {
         <div className="border-b border-neutral-200"></div>
         <div className="flex flex-wrap gap-4">
           <div className="flex w-full gap-4">
-            <article className="flex flex-col items-center border border-neutral-200 w-full rounded py-2">
+            <article className="flex flex-col items-center border border-neutral-200 w-full rounded py-2 shadow-sm">
               <Image
                 src="/svg/kmBlack.svg"
                 alt="icono de kilometros"
@@ -136,9 +137,10 @@ export default function Car_Details({ car }: Props) {
                 height={20}
                 className="w-6 h-6 "
               />
-              <p>{car.km}</p>
+              <p className="text-sm">Kilometros</p>
+              <p>{car.km.toLocaleString()}</p>
             </article>
-            <article className="flex flex-col items-center border border-neutral-200 w-full rounded py-2">
+            <article className="flex flex-col items-center border border-neutral-200 w-full rounded py-2 shadow-sm">
               <Image
                 src="/svg/fuelBlack.svg"
                 alt="icono de combustible"
@@ -146,11 +148,12 @@ export default function Car_Details({ car }: Props) {
                 height={20}
                 className="w-6 h-6 "
               />
+              <p className="text-sm">Combustible</p>
               <p>{car.combustible}</p>
             </article>
           </div>
           <div className="flex w-full gap-4">
-            <article className="flex flex-col items-center border border-neutral-200 w-full rounded py-2">
+            <article className="flex flex-col items-center border border-neutral-200 w-full rounded py-2 shadow-sm">
               <Image
                 src="/svg/gearbox.svg"
                 alt="icono tipo de cambio de marchas"
@@ -158,9 +161,10 @@ export default function Car_Details({ car }: Props) {
                 height={20}
                 className="w-6 h-6 "
               />
+              <p className="text-sm">Cambio</p>
               <p>{car.cambio}</p>
             </article>
-            <article className="flex flex-col items-center border border-neutral-200 w-full rounded py-2">
+            <article className="flex flex-col items-center border border-neutral-200 w-full rounded py-2 shadow-sm">
               <Image
                 src="/svg/carDoor.svg"
                 alt="icono de car Door"
@@ -168,57 +172,59 @@ export default function Car_Details({ car }: Props) {
                 height={20}
                 className="w-6 h-6 "
               />
+              <p className="text-sm">Puertas</p>
               <p>{car.puertas}</p>
             </article>
           </div>
         </div>
 
         <h1 className="text-lg font-bold -mb-1">Especificaciones</h1>
-        <div className="flex flex-col gap-2">
-          <article className="flex justify-between bg-neutral-200 px-2 py-1 rounded">
+        <div className="flex flex-col gap-3">
+          <article className="flex justify-between px-2 py-2 rounded bg-neutral-300">
             <p>Año</p>
-            <p className="font-bold text-neutral-600">{car.anio}</p>
+            <p className="font-bold">{car.anio}</p>
           </article>
-          <article className="flex justify-between bg-neutral-200 px-2 py-1 rounded">
+          <article className="flex justify-between px-2 py-2 rounded bg-neutral-300">
             <p>Kilometros</p>
-            <p className="font-bold text-neutral-600">
-              {car.km.toLocaleString()}
-            </p>
+            <p className="font-bold">{car.km.toLocaleString()}</p>
           </article>
-          <article className="flex justify-between bg-neutral-200 px-2 py-1 rounded">
+          <article className="flex justify-between px-2 py-2 rounded bg-neutral-300">
             <p>Combustible</p>
-            <p className="font-bold text-neutral-600">{car.combustible}</p>
+            <p className="font-bold">{car.combustible}</p>
           </article>
-          <article className="flex justify-between bg-neutral-200 px-2 py-1 rounded">
+          <article className="flex justify-between px-2 py-2 rounded bg-neutral-300">
             <p>Transmisión</p>
-            <p className="font-bold text-neutral-600">{car.cambio}</p>
+            <p className="font-bold">{car.cambio}</p>
           </article>
-          <article className="flex justify-between bg-neutral-200 px-2 py-1 rounded">
+          <article className="flex justify-between px-2 py-2 rounded bg-neutral-300">
             <p>CV</p>
-            <p className="font-bold text-neutral-600">{car.cv}</p>
+            <p className="font-bold">{car.cv}</p>
           </article>
-          <article className="flex justify-between bg-neutral-200 px-2 py-1 rounded">
+          <article className="flex justify-between px-2 py-2 rounded bg-neutral-300">
             <p>Motor</p>
-            <p className="font-bold text-neutral-600">
+            <p className="font-bold">
               {formatNumber.format(Number(car.motor))}
             </p>
           </article>
-          <article className="flex justify-between bg-neutral-200 px-2 py-1 rounded">
+          <article className="flex justify-between px-2 py-2 rounded bg-neutral-300">
             <p>Plazas</p>
-            <p className="font-bold text-neutral-600">{car.plazas}</p>
+            <p className="font-bold">{car.plazas}</p>
           </article>
-          <article className="flex justify-between bg-neutral-200 px-2 py-1 rounded">
+          <article className="flex justify-between px-2 py-2 rounded bg-neutral-300">
             <p>Puertas</p>
-            <p className="font-bold text-neutral-600">{car.puertas}</p>
+            <p className="font-bold">{car.puertas}</p>
           </article>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-4">
+      <div className="flex flex-col gap-4 py-4 px-2 ">
         <h2 className="text-xl font-bold">¿Quieres saber más?</h2>
         <p className="text-sm ">
           Contacta con nosotros para más información sobre este coche.
         </p>
-        <SendMessage />
+        <div className="flex gap-4 pt-4">
+          <Call />
+          <SendMessage />
+        </div>
       </div>
 
       <style jsx global>{`

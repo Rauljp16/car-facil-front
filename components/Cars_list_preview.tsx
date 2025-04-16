@@ -7,7 +7,7 @@ function Cars_List({ cars }: { cars: Car[] }) {
 
   return (
     <div>
-      <ul className="flex flex-col p-4 gap-4 bg-contrast">
+      <ul className="flex flex-col p-6 gap-6 bg-contrast">
         {carsPreview.map((car) => (
           <li key={car.id} className="">
             <div className="flex flex-col w-full h-80 rounded-xl">
@@ -51,7 +51,9 @@ function Cars_List({ cars }: { cars: Car[] }) {
                       height={14}
                       className="w-4"
                     />
-                    <p className="text-sm pt-[2px] mx-auto">{car.km}</p>
+                    <p className="text-sm pt-[2px] mx-auto">
+                      {car.km.toLocaleString()}
+                    </p>
                   </article>
                   <article className="flex bg-neutral-600 text-sm items-center p-1 w-full rounded gap-1">
                     <Image
@@ -65,7 +67,7 @@ function Cars_List({ cars }: { cars: Car[] }) {
                   </article>
                 </div>
                 <Link href={`coches/${car.id}`}>
-                  <button className="bg-greenCarFacil w-full p-1 rounded-2xl">
+                  <button className="bg-greenCarFacil w-full p-1 rounded-md">
                     Ver Detalles
                   </button>
                 </Link>
@@ -75,10 +77,10 @@ function Cars_List({ cars }: { cars: Car[] }) {
         ))}
       </ul>
 
-      <div className="flex w-full justify-end p-4 pt-0 bg-neutral-300">
+      <div className="flex w-full justify-end p-6 pt-0 bg-contrast">
         <Link
           href={"coches/todos"}
-          className="text-red-500 border border-red-500 p-1 rounded-3xl font-thin px-3 cursor-pointer"
+          className="text-white bg-red-400 p-1 rounded-md px-3 shadow-sm shadow-neutral-600 cursor-pointer"
         >
           Mostrar todos
         </Link>
