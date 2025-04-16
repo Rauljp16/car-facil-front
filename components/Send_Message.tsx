@@ -19,7 +19,7 @@ const SendMessage = () => {
         onClick={handleClick}
       >
         <img
-          src="/svg/WhatsApp.svg"
+          src="/svg/whatsApp.svg"
           alt="icono de mensajeria"
           width={120}
           height={120}
