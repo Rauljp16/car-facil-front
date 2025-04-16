@@ -1,6 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
-
-import Image from "next/image";
 
 function Call() {
   const numeroTelefono = "+34722783162";
@@ -9,7 +8,7 @@ function Call() {
       href={`tel:${numeroTelefono}`}
       className="w-full bg-red-400 rounded-xl flex items-center justify-center z-50"
     >
-      <Image
+      <img
         src="/svg/phoneWhite.svg"
         alt="icono de telefono"
         width={20}
