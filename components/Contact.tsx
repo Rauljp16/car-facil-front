@@ -18,7 +18,7 @@ export default function Contact() {
                 className="w-6 h-6 "
               />
 
-              <p>Camino de los soldados, nº265 30169 San Gines, Murcia</p>
+              <p>Camino de los soldados nº265, 30169 San Gines, Murcia</p>
             </div>
             <div className="flex items-center gap-4">
               <Image

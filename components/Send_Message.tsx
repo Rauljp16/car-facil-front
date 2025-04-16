@@ -1,5 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
+
+import Image from "next/image";
 
 const SendMessage = () => {
   const handleClick = () => {
@@ -18,7 +19,7 @@ const SendMessage = () => {
         className="w-full py-1 bg-[#25D366] rounded-xl flex items-center justify-center z-50"
         onClick={handleClick}
       >
-        <img
+        <Image
           src="/svg/whatsApp.svg"
           alt="icono de mensajeria"
           width={120}
