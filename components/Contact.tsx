@@ -77,7 +77,7 @@ export default function Contact() {
         <p className="text-sm max-w-80">
           Estamos disponibles para responder a todas tus preguntas sobre
           nuestros vehículos. Haz clic en el botón para iniciar una conversación
-          con nosotros.
+          con nosotros o llámanos!
         </p>
         <div className="flex gap-4 pt-4">
           <Call />

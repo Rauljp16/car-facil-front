@@ -4,7 +4,7 @@ import { Car } from "@/app/types/global";
 
 function News({ cars }: { cars: Car[] }) {
   return (
-    <div>
+    <div id="novedades">
       <Slider cars={cars} />
     </div>
   );

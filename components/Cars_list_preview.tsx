@@ -80,7 +80,7 @@ function Cars_List({ cars }: { cars: Car[] }) {
       <div className="flex w-full justify-end p-6 pt-0 bg-contrast">
         <Link
           href={"coches/todos"}
-          className="text-white bg-red-400 p-1 rounded-md px-3 shadow-sm shadow-neutral-600 cursor-pointer"
+          className="text-white bg-red-500 p-1 rounded-md px-3 shadow-sm shadow-neutral-600 cursor-pointer"
         >
           Mostrar todos
         </Link>

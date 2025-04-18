@@ -7,7 +7,7 @@ function Call() {
   return (
     <a
       href={`tel:${numeroTelefono}`}
-      className="w-full bg-red-400 rounded-xl flex items-center justify-center z-50"
+      className="w-full bg-red-500 rounded-xl flex items-center justify-center z-50"
     >
       <Image
         src="/svg/phoneWhite.svg"

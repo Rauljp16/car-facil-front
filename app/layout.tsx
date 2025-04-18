@@ -3,6 +3,7 @@ import { Grechen_Fuemen, Lato } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Construccion from "@/components/Construccion";
 
 const grechen = Grechen_Fuemen({
   variable: "--font-grechen-fuemen",
@@ -33,7 +34,8 @@ export default function RootLayout({
         className={`${grechen.variable} ${lato.variable} antialiased font-lato relative`}
       >
         <Header />
-        {children}
+        <Construccion />
+        {/* {children} */}
         <Footer />
       </body>
     </html>

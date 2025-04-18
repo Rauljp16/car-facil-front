@@ -24,80 +24,25 @@ function Footer() {
               Ofrecemos vehículos de segunda mano con garantía y al mejor
               precio.
             </p>
-            <div className="flex gap-4 pt-2">
-              <Link href="#">
-                <Image
-                  src="/svg/km.svg"
-                  alt="svg kilometers"
-                  width={14}
-                  height={14}
-                  className="w-4 h-4 hover:drop-shadow-xl transition-all duration-500"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="text-white hover:text-green-500 transition-colors"
-              >
-                <Image
-                  src="/svg/km.svg"
-                  alt="svg kilometers"
-                  width={14}
-                  height={14}
-                  className="w-4"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="text-white hover:text-green-500 transition-colors"
-              >
-                <Image
-                  src="/svg/km.svg"
-                  alt="svg kilometers"
-                  width={14}
-                  height={14}
-                  className="w-4"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="text-white hover:text-green-500 transition-colors"
-              >
-                <Image
-                  src="/svg/km.svg"
-                  alt="svg kilometers"
-                  width={14}
-                  height={14}
-                  className="w-4"
-                />
-              </Link>
-            </div>
           </div>
 
           {/* Columna 2: Enlaces rápidos */}
           <div className="space-y-4">
-            <h3 className="text-lg text-red-400 font-medium border-l-2 border-greenCarFacil pl-3">
+            <h3 className="text-lg text-red-500 font-medium border-l-2 border-greenCarFacil pl-3">
               Enlaces rápidos
             </h3>
             <ul className="space-y-2 text-white">
               <li>
                 <Link
-                  href="#home"
+                  href={"coches/todos"}
                   className="hover:text-green-500 transition-colors"
                 >
-                  Inicio
+                  Todos los coches
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="hover:text-green-500 transition-colors"
-                >
-                  Catálogo de coches
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
+                  href="/#novedades"
                   className="hover:text-green-500 transition-colors"
                 >
                   Novedades
@@ -120,11 +65,39 @@ function Footer() {
                 </Link>
               </li>
             </ul>
+            <div className="flex gap-4 pt-2">
+              <a
+                href="https://www.facebook.com/people/Car-f%C3%A1cil-Pol%C3%ADgono-San-Gin%C3%A9s-Murcia/100063117345205/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/svg/facebook.svg"
+                  alt="svg facebook"
+                  width={14}
+                  height={14}
+                  className="w-4 h-4 hover:drop-shadow-xl transition-all duration-500"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/people/Car-f%C3%A1cil-Pol%C3%ADgono-San-Gin%C3%A9s-Murcia/100063117345205/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/svg/instagram.svg"
+                  alt="svg kilometers"
+                  width={14}
+                  height={14}
+                  className="w-4"
+                />
+              </a>
+            </div>
           </div>
 
           {/* Columna 3: Contacto */}
           <div className="space-y-4">
-            <h3 className="text-lg text-red-400 font-medium border-l-2 border-greenCarFacil pl-3">
+            <h3 className="text-lg text-red-500 font-medium border-l-2 border-greenCarFacil pl-3">
               Contacto
             </h3>
             <ul className="space-y-3 text-white">

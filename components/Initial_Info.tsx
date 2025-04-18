@@ -4,12 +4,9 @@ import React from "react";
 
 function Initial_Info() {
   return (
-    <section
-      id="home"
-      className="relative flex flex-col w-full h-[calc(100vh-20vh)]"
-    >
-      <div className="flex justify-center w-full h-[65%]">
-        <article className="relative top-16 flex flex-col w-[13%] max-w-12 h-1/2 gap-2">
+    <section id="home" className="relative flex flex-col w-full">
+      <div className="flex justify-center w-full">
+        <article className="relative top-16 flex flex-col w-14 h-fit left-4 gap-3">
           <Image
             src="/images/coche10.png"
             alt=""
@@ -32,17 +29,17 @@ function Initial_Info() {
             className="w-full h-auto object-cover aspect-square"
           />
         </article>
-        <article className="relative w-64 h-full pt-[85px] -z-10 right-4">
+        <article className="relative w-72 pt-[85px] -z-10 right-4">
           <Image
             src="/images/coche12.png"
             alt=""
             width={1000}
             height={1400}
-            className=" w-full h-full object-cover "
+            className=" w-full h-full object-cover aspect-square"
           />
         </article>
       </div>
-      <div className="flex flex-col justify-between w-full h-[35%] p-4">
+      <div className="flex flex-col justify-between w-full p-4 gap-4">
         <h1 className="text-4xl font-thin">Un coche para tí</h1>
         <p className="text-sm w-full max-w-80">
           Encuentra el coche perfecto para ti, con opciones que se adaptan a tu
