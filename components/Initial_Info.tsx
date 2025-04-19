@@ -8,21 +8,21 @@ function Initial_Info() {
       <div className="flex justify-center w-full">
         <article className="relative top-16 flex flex-col w-14 h-fit left-4 gap-3">
           <Image
-            src="/images/coche10.png"
+            src="https://res.cloudinary.com/de3x73klh/image/upload/f_auto,q_auto/v1745058509/coche10_r34hvn.png"
             alt=""
             width={80}
             height={80}
             className="w-full h-auto object-cover aspect-square"
           />
           <Image
-            src="/images/coche9.png"
+            src="https://res.cloudinary.com/de3x73klh/image/upload/f_auto,q_auto/v1745058508/coche9_j46rsc.png"
             alt=""
             width={80}
             height={80}
             className="w-full h-auto object-cover aspect-square"
           />
           <Image
-            src="/images/coche6.png"
+            src="https://res.cloudinary.com/de3x73klh/image/upload/f_auto,q_auto/v1745058507/coche6_eldhd8.png"
             alt=""
             width={80}
             height={80}
@@ -31,7 +31,7 @@ function Initial_Info() {
         </article>
         <article className="relative w-72 pt-[85px] -z-10 right-4">
           <Image
-            src="/images/coche12.png"
+            src="https://res.cloudinary.com/de3x73klh/image/upload/f_auto,q_auto/v1745058509/coche12_hjo94e.png"
             alt=""
             width={1000}
             height={1400}

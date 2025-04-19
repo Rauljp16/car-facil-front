@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Menu_burguer from "./Menu_burguer";
 
 function Header() {
   return (
@@ -15,13 +16,7 @@ function Header() {
             className="w-20"
           />
         </Link>
-        <Image
-          src="/svg/menu_burguer.svg"
-          alt="Menu burguer"
-          width={20}
-          height={20}
-          className="w-8 h-8 cursor-pointer z-10"
-        />
+        <Menu_burguer />
       </div>
       <div className="absolute -z-10 top-0 right-0 w-1/4 h-60 bg-contrast"></div>
     </>

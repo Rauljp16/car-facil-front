@@ -1,8 +1,8 @@
 export default function Loading() {
   return (
     <>
-      <div className="p-4 pt-16 h-[calc(100vh-12vh)] bg-neutral-200 max-w-md mx-auto animate-pulse">
-        <div className="relative w-80 h-[53%] mx-auto px-8 mb-10">
+      <div className="p-4 pt-16 bg-neutral-200 max-w-md mx-auto animate-pulse">
+        <div className="relative w-80 h-72 mx-auto px-8 mb-10">
           <div className="absolute top-0 left-2 flex flex-col gap-2 overflow-x-auto">
             <div className="w-12 h-12 bg-neutral-400 z-10"></div>
             <div className="w-12 h-12 bg-neutral-400 z-10"></div>
@@ -11,7 +11,7 @@ export default function Loading() {
 
           <div className="absolute top-4 left-10 w-64 h-full bg-neutral-300"></div>
         </div>
-        <div className="flex flex-col h-[37%] justify-between mb-4">
+        <div className="flex flex-col h-48 justify-between mb-4">
           {/* Title */}
           <div className="h-8 w-64 bg-neutral-400 rounded"></div>
 

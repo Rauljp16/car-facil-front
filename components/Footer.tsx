@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="w-full bg-neutral-800 py-6 pb-3">
+    <footer className="w-full text-sm bg-neutral-800 py-6 pb-3">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Columna 1: Logo y descripción */}
@@ -19,7 +19,7 @@ function Footer() {
                 />
               </Link>
             </div>
-            <p className="text-white text-sm">
+            <p className="text-white">
               Tu concesionario de confianza para encontrar el coche perfecto.
               Ofrecemos vehículos de segunda mano con garantía y al mejor
               precio.
@@ -50,18 +50,10 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="sobreNosotros"
                   className="hover:text-green-500 transition-colors"
                 >
                   Sobre nosotros
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#contact"
-                  className="hover:text-green-500 transition-colors"
-                >
-                  Contacto
                 </Link>
               </li>
             </ul>
@@ -103,28 +95,30 @@ function Footer() {
             <ul className="space-y-3 text-white">
               <li className="flex items-center gap-2">
                 <Image
-                  src="/svg/km.svg"
-                  alt="svg kilometers"
+                  src="/svg/locationWhite.svg"
+                  alt="svg mapa"
                   width={14}
                   height={14}
                   className="w-4"
                 />
-                <span>Camino de los soldados, San Ginés, Murcia</span>
+                <span>
+                  Camino de los soldados nº265, 30169 San Gines, Murcia
+                </span>
               </li>
               <li className="flex items-center gap-2">
                 <Image
-                  src="/svg/km.svg"
-                  alt="svg kilometers"
+                  src="/svg/phoneWhite.svg"
+                  alt="svg telefono"
                   width={14}
                   height={14}
                   className="w-4"
                 />
-                <span>+34 666 666 666</span>
+                <span>+34 722 783 162</span>
               </li>
               <li className="flex items-center gap-2">
                 <Image
-                  src="/svg/km.svg"
-                  alt="svg kilometers"
+                  src="/svg/emailWhite.svg"
+                  alt="svg email"
                   width={14}
                   height={14}
                   className="w-4"
@@ -133,8 +127,8 @@ function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Image
-                  src="/svg/km.svg"
-                  alt="svg kilometers"
+                  src="/svg/clockWhite.svg"
+                  alt="svg horario"
                   width={14}
                   height={14}
                   className="w-4"
